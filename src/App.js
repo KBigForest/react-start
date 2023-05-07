@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
+import { createElement } from "react";
 
 const App = () => {
   const expenses = [
@@ -24,6 +25,7 @@ const App = () => {
       date: new Date(2021, 5, 12),
     },
   ];
+
   return (
     <div className="App">
       <header className="App-header">
