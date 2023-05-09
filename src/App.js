@@ -27,11 +27,16 @@ const App = () => {
     },
   ];
 
+  const addExpenseDataHandler = (newexpense) => {
+    console.log("in App.js");
+    console.log(newexpense);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <NewExpense />
+        <NewExpense onAddExpense={addExpenseDataHandler} />
         <Expenses items={expenses} />
         <p>Let's dive deep in the react world</p>
       </header>
